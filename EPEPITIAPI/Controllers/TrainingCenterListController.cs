@@ -1,7 +1,11 @@
 ﻿using EPEPITIAPI.DBHelper;
+using EPEPITIAPI.EPEPDbContext;
 using EPEPITIAPI.Models;
+using EPEPITIAPI.Models.TrainingSection;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 
 namespace EPEPITIAPI.Controllers
@@ -12,9 +16,14 @@ namespace EPEPITIAPI.Controllers
     {
         private readonly TrainingCenterListDAL _oCenterListDAL;
 
-        public TrainingCenterListController(TrainingCenterListDAL centerListDAL)
+        private readonly EPEPITIDbContext _jwtContext;
+        protected APIResponse _response;
+
+        public TrainingCenterListController(TrainingCenterListDAL centerListDAL, EPEPITIDbContext jwtContext)
         {
             _oCenterListDAL = centerListDAL;
+            _jwtContext = jwtContext;
+            _response = new();
         }
 
 
@@ -38,7 +47,13 @@ namespace EPEPITIAPI.Controllers
                     a.pin,
                     a.stateName,
                     a.district,
-                    a.status
+                    a.status,
+                    a.approval_status,
+                    a.approval_date,
+                    a.image_path1,
+                    a.image_path2,
+                    a.image_path3,
+                    a.reject_reason
                 });
                 return Ok(sList);
             }
@@ -68,7 +83,13 @@ namespace EPEPITIAPI.Controllers
                     a.pin,
                     a.stateName,
                     a.district,
-                    a.imageURL
+                    a.imageURL,
+                    a.approval_status,
+                    a.approval_date,
+                    a.image_path1,
+                    a.image_path2,
+                    a.image_path3,
+                    a.reject_reason
                 });
                 return Ok(sList);
             }
@@ -101,7 +122,16 @@ namespace EPEPITIAPI.Controllers
                         pin = cList.pin,
                         stateID = cList.stateID,
                         district = cList.district,
-                        status = cList.status
+                        status = cList.status,
+
+                        approval_status= cList.approval_status,
+                        approval_date= cList.approval_date,
+                        image_path1= cList.image_path1,
+                        image_path2= cList.image_path2,
+                        image_path3 = cList.image_path3,
+                        reject_reason= cList.reject_reason
+
+
                     };
                 }
 
@@ -267,5 +297,85 @@ namespace EPEPITIAPI.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+
+
+
+
+        [HttpPost("ApprovedRejectTrainingCenter")]
+        public async Task<APIResponse> ApprovedRejectTrainingCenter(ApproveRejectReq req)
+        {
+            var response = new APIResponse();
+
+            // Validate input
+            if (req.id == 0)
+            {
+                response.StatusCode = HttpStatusCode.BadRequest;
+                response.IsSuccess = false;
+                response.ErrorMessages.Add("Invalid Training Center Id!");
+                return response;
+            }
+
+            try
+            {
+                // Find training center
+                var centerData = await _jwtContext.TMTrainingCenter
+                    .FirstOrDefaultAsync(x => x.id == req.id);
+                if (centerData == null)
+                {
+                    response.StatusCode = HttpStatusCode.NotFound;
+                    response.IsSuccess = false;
+                    response.ErrorMessages.Add("No Training Center found!");
+                    return response;
+                }
+
+                if (!string.IsNullOrEmpty(centerData.approval_status) && centerData.approval_status.ToUpper() == "APPROVED")
+                {
+                    response.StatusCode = HttpStatusCode.BadRequest;
+                    response.IsSuccess = false;
+                    response.ErrorMessages.Add("Status cannot be updated after approval.");
+                    return response;
+                }
+
+
+                // Update approval status & related fields
+                centerData.approval_status = req.approval_status; // e.g., "APPROVED" or "REJECTED"
+                centerData.approval_date = DateTime.Now;
+                centerData.reject_reason = req.reject_reason;
+               
+                centerData.updatedOn = DateTime.Now;
+
+                _jwtContext.TMTrainingCenter.Update(centerData);
+                await _jwtContext.SaveChangesAsync();
+
+                // Prepare success response
+                response.StatusCode = HttpStatusCode.OK;
+                response.IsSuccess = true;
+                response.ActionResponse = $"Training Center {(req.approval_status?.ToUpper() == "APPROVED" ? "approved" : "rejected")} successfully.";
+                response.Result = new
+                {
+                    centerData.id,
+                    centerData.centerName,
+                    centerData.approval_status,
+                    centerData.reject_reason
+                };
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                response.IsSuccess = false;
+                response.ErrorMessages.Add("An error occurred while updating training center data.");
+                // Optionally add for debugging:
+                // response.ErrorMessages.Add(ex.Message);
+            }
+
+            return response;
+        }
+
+
+
+
+
+
     }
 }
