@@ -20,36 +20,61 @@ namespace EPEPITIAPI.DBHelper
         public List<TrainingCenterList> GetTrainingCenterDetailAll()
         {
             List<TrainingCenterList> lstCenterList = new List<TrainingCenterList>();
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (SqlCommand cmd = new SqlCommand("SP_GetTrainingCenterDetailAll", conn))
             {
-                SqlCommand cmd = new SqlCommand("SP_GetTrainingCenterDetailAll", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 conn.Open();
+
                 using (SqlDataReader dr = cmd.ExecuteReader())
                 {
                     while (dr.Read())
                     {
-                        TrainingCenterList lst = new TrainingCenterList();
-                        lst.id = Convert.ToInt32(dr["id"]);
-                        lst.centerName = dr["centerName"].ToString();
-                        lst.contactName = dr["contactName"].ToString();
-                        lst.mobile = dr["mobile"].ToString();
-                        lst.email = dr["email"].ToString();
-                        lst.address = dr["address"].ToString();
-                        lst.longitude = dr["long"].ToString();
-                        lst.latitude = dr["lat"].ToString();
-                        lst.pin = dr["pin"].ToString();
-                        lst.stateName = dr["stateName"].ToString();
-                        lst.district = dr["district"].ToString();                                           
-                        lst.status = Convert.ToInt32(dr["status"]);
+                        var lst = new TrainingCenterList();
+
+                        lst.id = dr["id"] != DBNull.Value ? Convert.ToInt32(dr["id"]) : 0;
+                        lst.centerName = dr["centerName"]?.ToString();
+                        lst.contactName = dr["contactName"]?.ToString();
+                        lst.mobile = dr["mobile"]?.ToString();
+                        lst.email = dr["email"]?.ToString();
+                        lst.address = dr["address"]?.ToString();
+                        lst.longitude = dr["long"]?.ToString();
+                        lst.latitude = dr["lat"]?.ToString();
+                        lst.pin = dr["pin"]?.ToString();
+                        lst.stateName = dr["stateName"]?.ToString();
+                        lst.district = dr["district"]?.ToString();
+                        lst.status = dr["status"] != DBNull.Value ? Convert.ToInt32(dr["status"]) : 0;
+                        lst.tc_id = dr["tc_id"]?.ToString();
+                        lst.approval_status = dr["approval_status"]?.ToString();
+
+                        lst.approval_date = dr["approval_date"] != DBNull.Value
+                            ? Convert.ToDateTime(dr["approval_date"])
+                            : (DateTime?)null;
+
+                        lst.reject_reason = dr["reject_reason"]?.ToString();
+
+                        // ✅ Fixed image paths and null handling
+                        lst.image_path1 = !string.IsNullOrEmpty(dr["image_path1"]?.ToString())
+                            ? "/Traning/" + dr["image_path1"].ToString()
+                            : string.Empty;
+
+                        lst.image_path2 = !string.IsNullOrEmpty(dr["image_path2"]?.ToString())
+                            ? "/Traning/" + dr["image_path2"].ToString()
+                            : string.Empty;
+
+                        lst.image_path3 = !string.IsNullOrEmpty(dr["image_path3"]?.ToString())
+                            ? "/Traning/" + dr["image_path3"].ToString()
+                            : string.Empty;
+
                         lstCenterList.Add(lst);
                     }
-
                 }
-                conn.Close();
             }
+
             return lstCenterList;
         }
+
 
         public List<TrainingCenterList> GetTrainingCenterDetailToViewByID(int id)
         {
@@ -77,7 +102,31 @@ namespace EPEPITIAPI.DBHelper
                         lst.pin = dr["pin"].ToString();
                         lst.stateName = dr["stateName"].ToString();
                         lst.district = dr["district"].ToString();
-                        lst.imageURL = dr["imageURL"].ToString();
+                       // lst.imageURL = dr["imageURL"].ToString();
+
+                        lst.tc_id = dr["tc_id"]?.ToString();
+                        lst.approval_status = dr["approval_status"]?.ToString();
+
+                        lst.approval_date = dr["approval_date"] != DBNull.Value
+                            ? Convert.ToDateTime(dr["approval_date"])
+                            : (DateTime?)null;
+
+                        lst.reject_reason = dr["reject_reason"]?.ToString();
+
+                        // ✅ Fixed image paths and null handling
+                        lst.image_path1 = !string.IsNullOrEmpty(dr["image_path1"]?.ToString())
+                            ? "/Traning/" + dr["image_path1"].ToString()
+                            : string.Empty;
+
+                        lst.image_path2 = !string.IsNullOrEmpty(dr["image_path2"]?.ToString())
+                            ? "/Traning/" + dr["image_path2"].ToString()
+                            : string.Empty;
+
+                        lst.image_path3 = !string.IsNullOrEmpty(dr["image_path3"]?.ToString())
+                            ? "/Traning/" + dr["image_path3"].ToString()
+                            : string.Empty;
+
+
                         lstCenterImgList.Add(lst);
                     }
 
@@ -113,6 +162,32 @@ namespace EPEPITIAPI.DBHelper
                         cList.pin = dr["pin"].ToString();
                         cList.stateID = Convert.ToInt32(dr["stateID"]);
                         cList.district = dr["district"].ToString();
+
+
+
+                        cList.tc_id = dr["tc_id"]?.ToString();
+                        cList.approval_status = dr["approval_status"]?.ToString();
+
+                        cList.approval_date = dr["approval_date"] != DBNull.Value
+                            ? Convert.ToDateTime(dr["approval_date"])
+                            : (DateTime?)null;
+
+                        cList.reject_reason = dr["reject_reason"]?.ToString();
+
+                        // ✅ Fixed image paths and null handling
+                        cList.image_path1 = !string.IsNullOrEmpty(dr["image_path1"]?.ToString())
+                            ? "/Traning/" + dr["image_path1"].ToString()
+                            : string.Empty;
+
+                        cList.image_path2 = !string.IsNullOrEmpty(dr["image_path2"]?.ToString())
+                            ? "/Traning/" + dr["image_path2"].ToString()
+                            : string.Empty;
+
+                        cList.image_path3 = !string.IsNullOrEmpty(dr["image_path3"]?.ToString())
+                            ? "/Traning/" + dr["image_path3"].ToString()
+                            : string.Empty;
+
+
                     }
                 }
             }
@@ -122,6 +197,19 @@ namespace EPEPITIAPI.DBHelper
 
         public bool InsertTrainingCenterDetail(TrainingCenterList cList)
         {
+
+            if (cList.image_path1_byte != null && cList.image_path1_byte.Length > 0)
+                cList.image_path1 = SaveImageProfile(cList.image_path1_byte);
+
+            if (cList.image_path2_byte != null && cList.image_path2_byte.Length > 0)
+                cList.image_path2 = SaveImageProfile(cList.image_path2_byte);
+
+            if (cList.image_path3_byte != null && cList.image_path3_byte.Length > 0)
+                cList.image_path3 = SaveImageProfile(cList.image_path3_byte);
+
+
+
+
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -139,6 +227,12 @@ namespace EPEPITIAPI.DBHelper
                 cmd.Parameters.Add("@district", SqlDbType.VarChar).Value = cList.district;
                 cmd.Parameters.Add("@address", SqlDbType.VarChar).Value = cList.address;
                 cmd.Parameters.Add("@createdBy", SqlDbType.Int).Value = cList.createdBy;
+                cmd.Parameters.Add("@tc_id", SqlDbType.NVarChar).Value = cList.tc_id;
+
+                cmd.Parameters.Add("@image_path1", SqlDbType.NVarChar).Value = cList.image_path1;
+                cmd.Parameters.Add("@image_path2", SqlDbType.NVarChar).Value = cList.image_path2;
+                cmd.Parameters.Add("@image_path3", SqlDbType.NVarChar).Value = cList.image_path3;
+
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -148,6 +242,16 @@ namespace EPEPITIAPI.DBHelper
 
         public bool UpdateTrainingCenterDetail(TrainingCenterList cList)
         {
+
+            if (cList.image_path1_byte != null && cList.image_path1_byte.Length > 0)
+                cList.image_path1 = SaveImageProfile(cList.image_path1_byte);
+
+            if (cList.image_path2_byte != null && cList.image_path2_byte.Length > 0)
+                cList.image_path2 = SaveImageProfile(cList.image_path2_byte);
+
+            if (cList.image_path3_byte != null && cList.image_path3_byte.Length > 0)
+                cList.image_path3 = SaveImageProfile(cList.image_path3_byte);
+
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -166,6 +270,13 @@ namespace EPEPITIAPI.DBHelper
                 cmd.Parameters.Add("@address", SqlDbType.VarChar).Value = cList.address;
                 cmd.Parameters.Add("@district", SqlDbType.VarChar).Value = cList.district;
                 cmd.Parameters.Add("@createdBy", SqlDbType.Int).Value = cList.createdBy;
+
+                cmd.Parameters.Add("@tc_id", SqlDbType.NVarChar).Value = cList.tc_id;
+
+                cmd.Parameters.Add("@image_path1", SqlDbType.NVarChar).Value = cList.image_path1;
+                cmd.Parameters.Add("@image_path2", SqlDbType.NVarChar).Value = cList.image_path2;
+                cmd.Parameters.Add("@image_path3", SqlDbType.NVarChar).Value = cList.image_path3;
+
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -266,6 +377,29 @@ namespace EPEPITIAPI.DBHelper
             {
                 return false;
             }
+        }
+
+
+        private string SaveImageProfile(byte[] ImageData)
+        {
+            try
+            {
+                string fileMapPath = Path.Combine(Environment.CurrentDirectory, @$"Uploads\Traning\");
+                //string fileMapPath = "~/Image/InfractionImages/";
+
+                if (!Directory.Exists(fileMapPath))
+                    Directory.CreateDirectory(fileMapPath); //Create directory if it doesn't exist
+
+                string imageName = "Traning_" + Guid.NewGuid().ToString() + ".jpg";  /*String.Format("{0:yyyyMMddhhmmss}", DateTime.Now)*/
+                string imgPath = Path.Combine(fileMapPath, imageName);
+                System.IO.File.WriteAllBytes(imgPath, ImageData);
+                return Path.GetFileName(imgPath);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
 

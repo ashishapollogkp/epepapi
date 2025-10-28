@@ -1,7 +1,13 @@
 using EPEPITIAPI.DBHelper;
+using EPEPITIAPI.EPEPDbContext;
+using EPEPITIAPI.Interfaces;
+using EPEPITIAPI.Services;
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<EPEPITIDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container
 builder.Services.AddControllers();
@@ -29,6 +35,10 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
+
+builder.Services.AddTransient<IShared, SharedService>();
+
+
 builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = 52428800; // 50 MB

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\EPEPITIAPI.csproj": {}
+    "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPITIAPI.csproj": {}
   },
   "projects": {
-    "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\EPEPITIAPI.csproj": {
+    "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPITIAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\EPEPITIAPI.csproj",
+        "projectUniqueName": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPITIAPI.csproj",
         "projectName": "EPEPITIAPI",
-        "projectPath": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\EPEPITIAPI.csproj",
-        "packagesPath": "C:\\Users\\ranja\\.nuget\\packages\\",
-        "outputPath": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\obj\\",
+        "projectPath": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPITIAPI.csproj",
+        "packagesPath": "C:\\Users\\ASHISH\\.nuget\\packages\\",
+        "outputPath": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ranja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASHISH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.3, )"

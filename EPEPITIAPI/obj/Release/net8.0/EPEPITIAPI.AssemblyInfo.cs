@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EPEPITIAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+198261c5fb5e4e6df3c54d4856360f1ffd92e001")]
 [assembly: System.Reflection.AssemblyProductAttribute("EPEPITIAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EPEPITIAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

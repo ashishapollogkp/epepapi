@@ -1203,6 +1203,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EPEPITIAPI.Controllers.SharedController",
+    "Method": "GetRequestStatusList",
+    "RelativePath": "api/Shared/GetRequestStatusList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
     "Method": "InsertTrainingCenterDetail",
     "RelativePath": "api/TrainingCenterList/Add-InsertTrainingCenterDetail",
@@ -1258,6 +1278,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "ApprovedRejectTrainingCenter",
+    "RelativePath": "api/TrainingCenterList/ApprovedRejectTrainingCenter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "EPEPITIAPI.Models.TrainingSection.ApproveRejectReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
