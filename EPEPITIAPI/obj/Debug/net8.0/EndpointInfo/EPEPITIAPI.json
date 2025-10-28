@@ -1,0 +1,2609 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "EPEPITIAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/AttendanceList/Get-GetBatchWiseCandidate": {
+      "get": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "parameters": [
+          {
+            "name": "batchID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Get-GetAadhaarWiseCandidate": {
+      "get": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "parameters": [
+          {
+            "name": "aadhaar",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Get-GetBatchWiseAttendance": {
+      "get": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "parameters": [
+          {
+            "name": "batchID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Add-MarkAttendance": {
+      "post": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Update-UnMarkAttendance": {
+      "put": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttendanceListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Get-GetCandidateToAllocateBatch": {
+      "get": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "parameters": [
+          {
+            "name": "batchID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AttendanceList/Add-AllocateBatchToCandidates": {
+      "post": {
+        "tags": [
+          "AttendanceList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AttendanceListDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AttendanceListDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AttendanceListDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetTrainedBatchDetail": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchDetailAll": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchDetailByTrainerID": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "trainerID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchDetailByAssessorID": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "assessorID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchDetailToViewByID": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchDetailToEditByID": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Add-InsertBatchDetail": {
+      "post": {
+        "tags": [
+          "BatchList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Update-UpdateBatchDetail": {
+      "put": {
+        "tags": [
+          "BatchList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Update-ChangeBatchStatus": {
+      "put": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Get-GetBatchWiseImages": {
+      "get": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "batchID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Add-InsertBatchImages": {
+      "post": {
+        "tags": [
+          "BatchList"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "batchID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "imageURLName": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "createdBy": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "createdOn": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                },
+                "batchID": {
+                  "style": "form"
+                },
+                "imageURLName": {
+                  "style": "form"
+                },
+                "imageURL": {
+                  "style": "form"
+                },
+                "createdBy": {
+                  "style": "form"
+                },
+                "createdOn": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BatchList/Delete-DeleteBatchInages": {
+      "delete": {
+        "tags": [
+          "BatchList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindReligionDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindCategoryDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindStateDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindQualificationDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindUserRoleDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindNSQFCodeDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindSectorDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindJobRoleDropDownListBySectorID": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "parameters": [
+          {
+            "name": "sectorID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindJobDetailDropDownListByJobRoleID": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "parameters": [
+          {
+            "name": "jobRoleID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindPartnerTypeDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindPartnerDropDownListByPartnerTypeID": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "parameters": [
+          {
+            "name": "partnerTypeID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindTrainingCenterDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindTrainerDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindAssessorDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindBatchDropDownList": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BindDropDown/Bind-BindBatchDropDownListAttendance": {
+      "get": {
+        "tags": [
+          "BindDropDown"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Get-GetCandidateDetailAll": {
+      "get": {
+        "tags": [
+          "CandidateList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Get-GetAllocatedCandidateDetailAll": {
+      "get": {
+        "tags": [
+          "CandidateList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Get-GetCandidateDetailToEditByID": {
+      "get": {
+        "tags": [
+          "CandidateList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Add-InsertCandidatetData": {
+      "post": {
+        "tags": [
+          "CandidateList"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "candidateID": {
+                    "type": "string"
+                  },
+                  "candidateName": {
+                    "type": "string"
+                  },
+                  "mobile": {
+                    "type": "string"
+                  },
+                  "aadhaar": {
+                    "type": "string"
+                  },
+                  "aadhaarLinkedMobile": {
+                    "type": "string"
+                  },
+                  "dob": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "gender": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "fhName": {
+                    "type": "string"
+                  },
+                  "religionID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "categoryID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "pan": {
+                    "type": "string"
+                  },
+                  "sectorID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "jobRoleID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "jobDetailID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "district": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "pin": {
+                    "type": "string"
+                  },
+                  "stateID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "qualificationID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "disabilityYN": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "disability": {
+                    "type": "string"
+                  },
+                  "profileImageName": {
+                    "type": "string"
+                  },
+                  "aadhaarFrontName": {
+                    "type": "string"
+                  },
+                  "aadhaarBackName": {
+                    "type": "string"
+                  },
+                  "profileImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "aadhaarFront": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "aadhaarBack": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "createdBy": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                },
+                "candidateID": {
+                  "style": "form"
+                },
+                "candidateName": {
+                  "style": "form"
+                },
+                "mobile": {
+                  "style": "form"
+                },
+                "aadhaar": {
+                  "style": "form"
+                },
+                "aadhaarLinkedMobile": {
+                  "style": "form"
+                },
+                "dob": {
+                  "style": "form"
+                },
+                "gender": {
+                  "style": "form"
+                },
+                "fhName": {
+                  "style": "form"
+                },
+                "religionID": {
+                  "style": "form"
+                },
+                "categoryID": {
+                  "style": "form"
+                },
+                "pan": {
+                  "style": "form"
+                },
+                "sectorID": {
+                  "style": "form"
+                },
+                "jobRoleID": {
+                  "style": "form"
+                },
+                "jobDetailID": {
+                  "style": "form"
+                },
+                "district": {
+                  "style": "form"
+                },
+                "address": {
+                  "style": "form"
+                },
+                "pin": {
+                  "style": "form"
+                },
+                "stateID": {
+                  "style": "form"
+                },
+                "qualificationID": {
+                  "style": "form"
+                },
+                "disabilityYN": {
+                  "style": "form"
+                },
+                "disability": {
+                  "style": "form"
+                },
+                "profileImageName": {
+                  "style": "form"
+                },
+                "aadhaarFrontName": {
+                  "style": "form"
+                },
+                "aadhaarBackName": {
+                  "style": "form"
+                },
+                "profileImage": {
+                  "style": "form"
+                },
+                "aadhaarFront": {
+                  "style": "form"
+                },
+                "aadhaarBack": {
+                  "style": "form"
+                },
+                "createdBy": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Update-UpdateCandidateData": {
+      "post": {
+        "tags": [
+          "CandidateList"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "candidateID": {
+                    "type": "string"
+                  },
+                  "candidateName": {
+                    "type": "string"
+                  },
+                  "mobile": {
+                    "type": "string"
+                  },
+                  "aadhaar": {
+                    "type": "string"
+                  },
+                  "aadhaarLinkedMobile": {
+                    "type": "string"
+                  },
+                  "dob": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "gender": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "fhName": {
+                    "type": "string"
+                  },
+                  "religionID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "categoryID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "pan": {
+                    "type": "string"
+                  },
+                  "sectorID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "jobRoleID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "jobDetailID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "district": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "pin": {
+                    "type": "string"
+                  },
+                  "stateID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "qualificationID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "disabilityYN": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "disability": {
+                    "type": "string"
+                  },
+                  "profileImageName": {
+                    "type": "string"
+                  },
+                  "aadhaarFrontName": {
+                    "type": "string"
+                  },
+                  "aadhaarBackName": {
+                    "type": "string"
+                  },
+                  "profileImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "aadhaarFront": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "aadhaarBack": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "createdBy": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                },
+                "candidateID": {
+                  "style": "form"
+                },
+                "candidateName": {
+                  "style": "form"
+                },
+                "mobile": {
+                  "style": "form"
+                },
+                "aadhaar": {
+                  "style": "form"
+                },
+                "aadhaarLinkedMobile": {
+                  "style": "form"
+                },
+                "dob": {
+                  "style": "form"
+                },
+                "gender": {
+                  "style": "form"
+                },
+                "fhName": {
+                  "style": "form"
+                },
+                "religionID": {
+                  "style": "form"
+                },
+                "categoryID": {
+                  "style": "form"
+                },
+                "pan": {
+                  "style": "form"
+                },
+                "sectorID": {
+                  "style": "form"
+                },
+                "jobRoleID": {
+                  "style": "form"
+                },
+                "jobDetailID": {
+                  "style": "form"
+                },
+                "district": {
+                  "style": "form"
+                },
+                "address": {
+                  "style": "form"
+                },
+                "pin": {
+                  "style": "form"
+                },
+                "stateID": {
+                  "style": "form"
+                },
+                "qualificationID": {
+                  "style": "form"
+                },
+                "disabilityYN": {
+                  "style": "form"
+                },
+                "disability": {
+                  "style": "form"
+                },
+                "profileImageName": {
+                  "style": "form"
+                },
+                "aadhaarFrontName": {
+                  "style": "form"
+                },
+                "aadhaarBackName": {
+                  "style": "form"
+                },
+                "profileImage": {
+                  "style": "form"
+                },
+                "aadhaarFront": {
+                  "style": "form"
+                },
+                "aadhaarBack": {
+                  "style": "form"
+                },
+                "createdBy": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Update-ChangeCandidateStatus": {
+      "put": {
+        "tags": [
+          "CandidateList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Add-InsertBulkCandidates": {
+      "post": {
+        "tags": [
+          "CandidateList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CandidateListUploadDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CandidateListUploadDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CandidateListUploadDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CandidateList/Check-CheckDuplicateAadhaar": {
+      "post": {
+        "tags": [
+          "CandidateList"
+        ],
+        "parameters": [
+          {
+            "name": "aadhaar",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Get-GetJobRoleAll": {
+      "get": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Get-GetJobRoleToEditByID": {
+      "get": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Add-InsertJobRoleData": {
+      "post": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Update-UpdateJobRoleData": {
+      "put": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Update-ChangeJobRoleStatus": {
+      "put": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Get-GetJobDetailsAll": {
+      "get": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Get-GetJobDetailToEditByID": {
+      "get": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Add-InsertJobDetailData": {
+      "post": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Update-UpdateJobDetailsData": {
+      "put": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobProfileListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/JobProfileList/Update-ChangeJobDetailStatus": {
+      "put": {
+        "tags": [
+          "JobProfileList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Get-GetPartnerDetailAll": {
+      "get": {
+        "tags": [
+          "PartnerList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Get-GetPartnerDetailToViewByID": {
+      "get": {
+        "tags": [
+          "PartnerList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Get-GetPartnerDetailToEditByID": {
+      "get": {
+        "tags": [
+          "PartnerList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Add-InsertPartnerData": {
+      "post": {
+        "tags": [
+          "PartnerList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Update-UpdatePartnerData": {
+      "put": {
+        "tags": [
+          "PartnerList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartnerListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartnerList/Update-ChangePartnerStatus": {
+      "put": {
+        "tags": [
+          "PartnerList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SectorList/Get-GetSectorAll": {
+      "get": {
+        "tags": [
+          "SectorList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SectorList/Get-GetSectorToEditByID": {
+      "get": {
+        "tags": [
+          "SectorList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SectorList/Add-InsertSectorData": {
+      "post": {
+        "tags": [
+          "SectorList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SectorList/Update-UpdateSectorData": {
+      "put": {
+        "tags": [
+          "SectorList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SectorList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SectorList/Update-ChangeSectorStatus": {
+      "put": {
+        "tags": [
+          "SectorList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Get-GetTrainingCenterDetailAll": {
+      "get": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Get-GetTrainingCenterDetailToViewByID": {
+      "get": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Get-GetTrainingCenterDetailToEditByID": {
+      "get": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Add-InsertTrainingCenterDetail": {
+      "post": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Update-UpdateTrainingCenterDetail": {
+      "put": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainingCenterList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Update-ChangeTrainingCenterStatus": {
+      "put": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Get-GetTrainingCenterImageByCenterID": {
+      "get": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "parameters": [
+          {
+            "name": "centerID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Add-InsertTrainingCenterImage": {
+      "post": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "trainingCenterID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "imageURLName": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "status": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "createdBy": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                },
+                "trainingCenterID": {
+                  "style": "form"
+                },
+                "imageURLName": {
+                  "style": "form"
+                },
+                "imageURL": {
+                  "style": "form"
+                },
+                "status": {
+                  "style": "form"
+                },
+                "createdBy": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TrainingCenterList/Delete-DeleteTrainingCenterImage": {
+      "delete": {
+        "tags": [
+          "TrainingCenterList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Get-GetUserDetailAll": {
+      "get": {
+        "tags": [
+          "UserList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Get-GetUserDetailToViewByID": {
+      "get": {
+        "tags": [
+          "UserList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Get-GetUserDetailToEditByID": {
+      "get": {
+        "tags": [
+          "UserList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Add-InsertUserData": {
+      "post": {
+        "tags": [
+          "UserList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Update-UpdateUserData": {
+      "put": {
+        "tags": [
+          "UserList"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserListDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Update-ChangeUserStatus": {
+      "put": {
+        "tags": [
+          "UserList"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserList/Login-ValidateUser": {
+      "post": {
+        "tags": [
+          "UserList"
+        ],
+        "parameters": [
+          {
+            "name": "loginID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AttendanceListDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "batchID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dayNo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BatchListDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "batchID": {
+            "type": "string",
+            "nullable": true
+          },
+          "sectorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRoleID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobDetailID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trainingCenterID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trainerID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assessorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CandidateListUploadDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateID": {
+            "type": "string",
+            "nullable": true
+          },
+          "candidateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "aadhaar": {
+            "type": "string",
+            "nullable": true
+          },
+          "aadhaarLinkedMobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "dob": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "gender": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fhName": {
+            "type": "string",
+            "nullable": true
+          },
+          "religionID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoryID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pan": {
+            "type": "string",
+            "nullable": true
+          },
+          "sectorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRoleID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobDetailID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "qualificationID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "disabilityYN": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "batchID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "disability": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "JobProfileListDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sectorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRoleID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRole": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobDetail": {
+            "type": "string",
+            "nullable": true
+          },
+          "qpCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "nsqfID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PartnerListDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "partnerTypeID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firmName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactPerson": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactMobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "firmAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SectorList": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sectorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TrainingCenterList": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "centerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactName": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserListDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userRoleID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "partnerID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userMobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "sectorID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobProfile": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

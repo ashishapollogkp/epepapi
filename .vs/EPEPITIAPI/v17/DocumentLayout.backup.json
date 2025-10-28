@@ -1,0 +1,267 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\controllers\\batchlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\batchlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\batchlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\batchlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\models\\batchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\batchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\models\\trainingcenterimagelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\trainingcenterimagelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\models\\candidatelistuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\candidatelistuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\controllers\\trainingcenterlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\trainingcenterlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\trainingcenterlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\trainingcenterlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\attendancelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\attendancelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\candidatelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\candidatelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\controllers\\partnerlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\partnerlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\controllers\\jobprofilelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\jobprofilelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\jobprofilelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\jobprofilelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\controllers\\sectorlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\sectorlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|e:\\working folder\\asp.net core 6\\epepitiapi\\epepitiapi\\dbhelper\\sectorlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\sectorlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainingCenterImageList.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\TrainingCenterImageList.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\TrainingCenterImageList.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\TrainingCenterImageList.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\TrainingCenterImageList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:26:06.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CandidateListUploadDTO.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\CandidateListUploadDTO.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\CandidateListUploadDTO.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\CandidateListUploadDTO.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\CandidateListUploadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:25:56.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BatchImageDTO.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\BatchImageDTO.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\BatchImageDTO.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Models\\BatchImageDTO.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\BatchImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:22:47.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrainingCenterListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAApwPQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:16:01.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrainingCenterListController.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAowAwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:12:27.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BatchListController.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAqwAcBAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:05:54.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Program.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Program.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T14:22:57.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CandidateListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAgwJwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T12:03:16.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BatchListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\BatchListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\BatchListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\BatchListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\BatchListDAL.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAwDkBAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T12:02:58.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AttendanceListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\AttendanceListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\AttendanceListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\AttendanceListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\AttendanceListDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T12:00:18.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PartnerListController.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\PartnerListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\PartnerListController.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\PartnerListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\PartnerListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T05:44:39.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobProfileListController.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\JobProfileListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\JobProfileListController.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\JobProfileListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\JobProfileListController.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAADwv7YAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T08:56:16.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JobProfileListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\JobProfileListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\JobProfileListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\JobProfileListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\JobProfileListDAL.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAADwv8QAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T08:54:19.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SectorListController.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\SectorListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\SectorListController.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\Controllers\\SectorListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\SectorListController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T08:49:02.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SectorListDAL.cs",
+              "DocumentMoniker": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\SectorListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\SectorListDAL.cs",
+              "ToolTip": "E:\\Working Folder\\ASP.Net Core 6\\EPEPITIAPI\\EPEPITIAPI\\DBHelper\\SectorListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\SectorListDAL.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T08:48:10.662Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

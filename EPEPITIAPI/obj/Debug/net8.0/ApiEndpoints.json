@@ -1,0 +1,1479 @@
+[
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "AllocateBatchToCandidates",
+    "RelativePath": "api/AttendanceList/Add-AllocateBatchToCandidates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidate",
+        "Type": "System.Collections.Generic.List\u00601[[EPEPITIAPI.Models.AttendanceListDTO, EPEPITIAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "MarkAttendance",
+    "RelativePath": "api/AttendanceList/Add-MarkAttendance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aList",
+        "Type": "EPEPITIAPI.Models.AttendanceListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "GetAadhaarWiseCandidate",
+    "RelativePath": "api/AttendanceList/Get-GetAadhaarWiseCandidate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aadhaar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "GetBatchWiseAttendance",
+    "RelativePath": "api/AttendanceList/Get-GetBatchWiseAttendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "GetBatchWiseCandidate",
+    "RelativePath": "api/AttendanceList/Get-GetBatchWiseCandidate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "GetCandidateToAllocateBatch",
+    "RelativePath": "api/AttendanceList/Get-GetCandidateToAllocateBatch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.AttendanceListController",
+    "Method": "UnMarkAttendance",
+    "RelativePath": "api/AttendanceList/Update-UnMarkAttendance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aList",
+        "Type": "EPEPITIAPI.Models.AttendanceListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "InsertBatchDetail",
+    "RelativePath": "api/BatchList/Add-InsertBatchDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bList",
+        "Type": "EPEPITIAPI.Models.BatchListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "InsertBatchImages",
+    "RelativePath": "api/BatchList/Add-InsertBatchImages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "batchID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageURLName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageURL",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdOn",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "DeleteBatchInages",
+    "RelativePath": "api/BatchList/Delete-DeleteBatchInages",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchDetailAll",
+    "RelativePath": "api/BatchList/Get-GetBatchDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchDetailByAssessorID",
+    "RelativePath": "api/BatchList/Get-GetBatchDetailByAssessorID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assessorID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchDetailByTrainerID",
+    "RelativePath": "api/BatchList/Get-GetBatchDetailByTrainerID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainerID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchDetailToEditByID",
+    "RelativePath": "api/BatchList/Get-GetBatchDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchDetailToViewByID",
+    "RelativePath": "api/BatchList/Get-GetBatchDetailToViewByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetBatchWiseImages",
+    "RelativePath": "api/BatchList/Get-GetBatchWiseImages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "GetTrainedBatchDetail",
+    "RelativePath": "api/BatchList/Get-GetTrainedBatchDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "ChangeBatchStatus",
+    "RelativePath": "api/BatchList/Update-ChangeBatchStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
+    "Method": "UpdateBatchDetail",
+    "RelativePath": "api/BatchList/Update-UpdateBatchDetail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bList",
+        "Type": "EPEPITIAPI.Models.BatchListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindAssessorDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindAssessorDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindBatchDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindBatchDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindBatchDropDownListAttendance",
+    "RelativePath": "api/BindDropDown/Bind-BindBatchDropDownListAttendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindCategoryDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindCategoryDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindJobDetailDropDownListByJobRoleID",
+    "RelativePath": "api/BindDropDown/Bind-BindJobDetailDropDownListByJobRoleID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobRoleID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindJobRoleDropDownListBySectorID",
+    "RelativePath": "api/BindDropDown/Bind-BindJobRoleDropDownListBySectorID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sectorID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindNSQFCodeDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindNSQFCodeDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindPartnerDropDownListByPartnerTypeID",
+    "RelativePath": "api/BindDropDown/Bind-BindPartnerDropDownListByPartnerTypeID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partnerTypeID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindPartnerTypeDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindPartnerTypeDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindQualificationDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindQualificationDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindReligionDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindReligionDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindSectorDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindSectorDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindStateDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindStateDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindTrainerDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindTrainerDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindTrainingCenterDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindTrainingCenterDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BindDropDownController",
+    "Method": "BindUserRoleDropDownList",
+    "RelativePath": "api/BindDropDown/Bind-BindUserRoleDropDownList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "InsertBulkCandidates",
+    "RelativePath": "api/CandidateList/Add-InsertBulkCandidates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidate",
+        "Type": "System.Collections.Generic.List\u00601[[EPEPITIAPI.Models.CandidateListUploadDTO, EPEPITIAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "InsertCandidateData",
+    "RelativePath": "api/CandidateList/Add-InsertCandidatetData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "candidateID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "candidateName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarLinkedMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dob",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fhName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "religionID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "categoryID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pan",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sectorID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobRoleID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobDetailID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "district",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "stateID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "qualificationID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "disabilityYN",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "disability",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profileImageName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarFrontName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarBackName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarFront",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarBack",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "CheckDuplicateAadhaar",
+    "RelativePath": "api/CandidateList/Check-CheckDuplicateAadhaar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aadhaar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "GetAllocatedCandidateDetailAll",
+    "RelativePath": "api/CandidateList/Get-GetAllocatedCandidateDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "GetCandidateDetailAll",
+    "RelativePath": "api/CandidateList/Get-GetCandidateDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "GetCandidateDetailToEditByID",
+    "RelativePath": "api/CandidateList/Get-GetCandidateDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "ChangeCandidateStatus",
+    "RelativePath": "api/CandidateList/Update-ChangeCandidateStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.CandidateListController",
+    "Method": "UpdateCandidateData",
+    "RelativePath": "api/CandidateList/Update-UpdateCandidateData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "candidateID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "candidateName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarLinkedMobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dob",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "gender",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fhName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "religionID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "categoryID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pan",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sectorID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobRoleID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobDetailID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "district",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "stateID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "qualificationID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "disabilityYN",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "disability",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profileImageName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarFrontName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarBackName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarFront",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "aadhaarBack",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "InsertJobDetailData",
+    "RelativePath": "api/JobProfileList/Add-InsertJobDetailData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jList",
+        "Type": "EPEPITIAPI.Models.JobProfileListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "InsertJobRoleData",
+    "RelativePath": "api/JobProfileList/Add-InsertJobRoleData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jList",
+        "Type": "EPEPITIAPI.Models.JobProfileListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "GetJobDetailsAll",
+    "RelativePath": "api/JobProfileList/Get-GetJobDetailsAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "GetJobDetailToEditByID",
+    "RelativePath": "api/JobProfileList/Get-GetJobDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "GetJobRoleAll",
+    "RelativePath": "api/JobProfileList/Get-GetJobRoleAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "GetJobRoleToEditByID",
+    "RelativePath": "api/JobProfileList/Get-GetJobRoleToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "ChangeJobDetailStatus",
+    "RelativePath": "api/JobProfileList/Update-ChangeJobDetailStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "ChangeJobRoleStatus",
+    "RelativePath": "api/JobProfileList/Update-ChangeJobRoleStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "UpdateJobDetailsData",
+    "RelativePath": "api/JobProfileList/Update-UpdateJobDetailsData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jList",
+        "Type": "EPEPITIAPI.Models.JobProfileListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.JobProfileListController",
+    "Method": "UpdateJobRoleData",
+    "RelativePath": "api/JobProfileList/Update-UpdateJobRoleData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jList",
+        "Type": "EPEPITIAPI.Models.JobProfileListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "InsertPartnerData",
+    "RelativePath": "api/PartnerList/Add-InsertPartnerData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pList",
+        "Type": "EPEPITIAPI.Models.PartnerListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "GetPartnerDetailAll",
+    "RelativePath": "api/PartnerList/Get-GetPartnerDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "GetPartnerDetailToEditByID",
+    "RelativePath": "api/PartnerList/Get-GetPartnerDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "GetPartnerDetailToViewByID",
+    "RelativePath": "api/PartnerList/Get-GetPartnerDetailToViewByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "ChangePartnerStatus",
+    "RelativePath": "api/PartnerList/Update-ChangePartnerStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.PartnerListController",
+    "Method": "UpdatePartnerData",
+    "RelativePath": "api/PartnerList/Update-UpdatePartnerData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jList",
+        "Type": "EPEPITIAPI.Models.PartnerListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.SectorListController",
+    "Method": "InsertSectorData",
+    "RelativePath": "api/SectorList/Add-InsertSectorData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sList",
+        "Type": "EPEPITIAPI.Models.SectorList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.SectorListController",
+    "Method": "GetSectorAll",
+    "RelativePath": "api/SectorList/Get-GetSectorAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.SectorListController",
+    "Method": "GetSectorToEditByID",
+    "RelativePath": "api/SectorList/Get-GetSectorToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.SectorListController",
+    "Method": "ChangeSectorStatus",
+    "RelativePath": "api/SectorList/Update-ChangeSectorStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.SectorListController",
+    "Method": "UpdateSectorData",
+    "RelativePath": "api/SectorList/Update-UpdateSectorData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sList",
+        "Type": "EPEPITIAPI.Models.SectorList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "InsertTrainingCenterDetail",
+    "RelativePath": "api/TrainingCenterList/Add-InsertTrainingCenterDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cList",
+        "Type": "EPEPITIAPI.Models.TrainingCenterList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "InsertTrainingCenterImage",
+    "RelativePath": "api/TrainingCenterList/Add-InsertTrainingCenterImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trainingCenterID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageURLName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageURL",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "DeleteTrainingCenterImage",
+    "RelativePath": "api/TrainingCenterList/Delete-DeleteTrainingCenterImage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "GetTrainingCenterDetailAll",
+    "RelativePath": "api/TrainingCenterList/Get-GetTrainingCenterDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "GetTrainingCenterDetailToEditByID",
+    "RelativePath": "api/TrainingCenterList/Get-GetTrainingCenterDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "GetTrainingCenterDetailToViewByID",
+    "RelativePath": "api/TrainingCenterList/Get-GetTrainingCenterDetailToViewByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "GetTrainingCenterImageByCenterID",
+    "RelativePath": "api/TrainingCenterList/Get-GetTrainingCenterImageByCenterID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "centerID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "ChangeTrainingCenterStatus",
+    "RelativePath": "api/TrainingCenterList/Update-ChangeTrainingCenterStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.TrainingCenterListController",
+    "Method": "UpdateTrainingCenterDetail",
+    "RelativePath": "api/TrainingCenterList/Update-UpdateTrainingCenterDetail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cList",
+        "Type": "EPEPITIAPI.Models.TrainingCenterList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "InsertUserData",
+    "RelativePath": "api/UserList/Add-InsertUserData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uList",
+        "Type": "EPEPITIAPI.Models.UserListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "GetUserDetailAll",
+    "RelativePath": "api/UserList/Get-GetUserDetailAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "GetUserDetailToEditByID",
+    "RelativePath": "api/UserList/Get-GetUserDetailToEditByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "GetUserDetailToViewByID",
+    "RelativePath": "api/UserList/Get-GetUserDetailToViewByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "ValidateUser",
+    "RelativePath": "api/UserList/Login-ValidateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "ChangeUserStatus",
+    "RelativePath": "api/UserList/Update-ChangeUserStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UserListController",
+    "Method": "UpdateUserData",
+    "RelativePath": "api/UserList/Update-UpdateUserData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uList",
+        "Type": "EPEPITIAPI.Models.UserListDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
