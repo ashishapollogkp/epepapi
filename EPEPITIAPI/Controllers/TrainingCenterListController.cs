@@ -3,6 +3,7 @@ using EPEPITIAPI.EPEPDbContext;
 using EPEPITIAPI.Models;
 using EPEPITIAPI.Models.TrainingSection;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
@@ -305,15 +306,14 @@ namespace EPEPITIAPI.Controllers
         [HttpPost("ApprovedRejectTrainingCenter")]
         public async Task<APIResponse> ApprovedRejectTrainingCenter(ApproveRejectReq req)
         {
-            var response = new APIResponse();
-
-            // Validate input
-            if (req.id == 0)
+            // Input validation
+            if (req.id <= 0)
             {
-                response.StatusCode = HttpStatusCode.BadRequest;
-                response.IsSuccess = false;
-                response.ErrorMessages.Add("Invalid Training Center Id!");
-                return response;
+                _response.ActionResponse = "Invalid Id";
+                _response.Result = null;
+                _response.StatusCode = HttpStatusCode.NoContent;
+                _response.IsSuccess = false;
+                return _response;
             }
 
             try
@@ -321,56 +321,62 @@ namespace EPEPITIAPI.Controllers
                 // Find training center
                 var centerData = await _jwtContext.TMTrainingCenter
                     .FirstOrDefaultAsync(x => x.id == req.id);
+
                 if (centerData == null)
                 {
-                    response.StatusCode = HttpStatusCode.NotFound;
-                    response.IsSuccess = false;
-                    response.ErrorMessages.Add("No Training Center found!");
-                    return response;
+                    _response.ActionResponse = "No data Found!";
+                    _response.Result = null;
+                    _response.StatusCode = HttpStatusCode.NotFound;
+                    _response.IsSuccess = false;
+                    return _response;
                 }
 
-                if (!string.IsNullOrEmpty(centerData.approval_status) && centerData.approval_status.ToUpper() == "APPROVED")
+                // Prevent modification after approval
+                if (!string.IsNullOrEmpty(centerData.approval_status) &&
+                    centerData.approval_status.Equals("APPROVED", StringComparison.OrdinalIgnoreCase))
                 {
-                    response.StatusCode = HttpStatusCode.BadRequest;
-                    response.IsSuccess = false;
-                    response.ErrorMessages.Add("Status cannot be updated after approval.");
-                    return response;
+
+                    _response.ActionResponse = "Status cannot be updated after approval.";
+                    _response.Result = null;
+                    _response.StatusCode = HttpStatusCode.BadRequest;
+                    _response.IsSuccess = false;
+                    return _response;
                 }
 
-
-                // Update approval status & related fields
-                centerData.approval_status = req.approval_status; // e.g., "APPROVED" or "REJECTED"
+                // Update fields
+                centerData.approval_status = req.approval_status?.ToUpper();
                 centerData.approval_date = DateTime.Now;
                 centerData.reject_reason = req.reject_reason;
-               
                 centerData.updatedOn = DateTime.Now;
 
                 _jwtContext.TMTrainingCenter.Update(centerData);
                 await _jwtContext.SaveChangesAsync();
 
-                // Prepare success response
-                response.StatusCode = HttpStatusCode.OK;
-                response.IsSuccess = true;
-                response.ActionResponse = $"Training Center {(req.approval_status?.ToUpper() == "APPROVED" ? "approved" : "rejected")} successfully.";
-                response.Result = new
-                {
-                    centerData.id,
-                    centerData.centerName,
-                    centerData.approval_status,
-                    centerData.reject_reason
-                };
+               
+
+                _response.ActionResponse = $"Training Center {(centerData.approval_status == "APPROVED" ? "approved" : "rejected")} successfully.";
+                _response.Result = null;
+                _response.StatusCode = HttpStatusCode.OK;
+                _response.IsSuccess = true;
+                return _response;
+
+
             }
             catch (Exception ex)
             {
-                response.StatusCode = HttpStatusCode.InternalServerError;
-                response.IsSuccess = false;
-                response.ErrorMessages.Add("An error occurred while updating training center data.");
-                // Optionally add for debugging:
-                // response.ErrorMessages.Add(ex.Message);
+                
+                _response.ActionResponse = "An error occurred while updating the training center status.";
+                _response.Result = null;
+                _response.StatusCode = HttpStatusCode.InternalServerError;
+                _response.IsSuccess = false;
+                return _response;
+
+
             }
 
-            return response;
+            
         }
+
 
 
 
