@@ -1783,24 +1783,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/APIResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/APIResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/APIResponse"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -2285,13 +2268,6 @@
           },
           "isSuccess": {
             "type": "boolean"
-          },
-          "errorMessages": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
           },
           "result": {
             "nullable": true
