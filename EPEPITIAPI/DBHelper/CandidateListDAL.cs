@@ -103,6 +103,13 @@ namespace EPEPITIAPI.DBHelper
                         lst.aadhaarBackName = dr["aadhaarBack"].ToString();
                         lst.status = Convert.ToInt32(dr["status"]);
 
+
+                        lst.religion_name = dr["religion_name"].ToString();
+                        lst.category_name = dr["category_name"].ToString();
+                        lst.gender_name = dr["gender_name"].ToString();
+                        lst.state_name = dr["state_name"].ToString();
+                        lst.qualification_name = dr["qualification_name"].ToString();
+
                         lstCandidateList.Add(lst);
                     }
 
@@ -151,6 +158,16 @@ namespace EPEPITIAPI.DBHelper
                         cList.profileImageName = dr["profileImage"].ToString();
                         cList.aadhaarFrontName = dr["aadhaarFront"].ToString();
                         cList.aadhaarBackName = dr["aadhaarBack"].ToString();
+
+                        cList.religion_name = dr["religion_name"].ToString();
+                        cList.category_name = dr["category_name"].ToString();
+                        cList.gender_name = dr["gender_name"].ToString();
+                        cList.state_name = dr["state_name"].ToString();
+                        cList.qualification_name = dr["qualification_name"].ToString();
+
+
+
+
                     }
                 }
             }
@@ -163,7 +180,7 @@ namespace EPEPITIAPI.DBHelper
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                SqlCommand cmd = new SqlCommand("SP_InsertTMCandidate", conn);
+                SqlCommand cmd = new SqlCommand("cc", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Clear();
                 cmd.Parameters.Add("@candidateName", SqlDbType.VarChar).Value = cList.candidateName;
@@ -190,6 +207,16 @@ namespace EPEPITIAPI.DBHelper
                 cmd.Parameters.Add("@aadhaarFront", SqlDbType.VarChar).Value = cList.aadhaarFrontName;
                 cmd.Parameters.Add("@aadhaarBack", SqlDbType.VarChar).Value = cList.aadhaarBackName;
                 cmd.Parameters.Add("@createdBy", SqlDbType.Int).Value = cList.createdBy;
+
+
+
+                cmd.Parameters.Add("@religion_name", SqlDbType.NVarChar).Value = cList.religion_name;
+                cmd.Parameters.Add("@category_name", SqlDbType.NVarChar).Value = cList.category_name;
+                cmd.Parameters.Add("@gender_name", SqlDbType.NVarChar).Value = cList.gender_name;
+                cmd.Parameters.Add("@state_name", SqlDbType.NVarChar).Value = cList.state_name;
+                cmd.Parameters.Add("@c", SqlDbType.NVarChar).Value = cList.qualification_name;
+
+
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -230,6 +257,13 @@ namespace EPEPITIAPI.DBHelper
                 cmd.Parameters.Add("@aadhaarFront", SqlDbType.VarChar).Value = jList.aadhaarFrontName;
                 cmd.Parameters.Add("@aadhaarBack", SqlDbType.VarChar).Value = jList.aadhaarBackName;
                 cmd.Parameters.Add("@createdBy", SqlDbType.Int).Value = jList.createdBy;
+
+                cmd.Parameters.Add("@religion_name", SqlDbType.NVarChar).Value = jList.religion_name;
+                cmd.Parameters.Add("@category_name", SqlDbType.NVarChar).Value = jList.category_name;
+                cmd.Parameters.Add("@gender_name", SqlDbType.NVarChar).Value = jList.gender_name;
+                cmd.Parameters.Add("@state_name", SqlDbType.NVarChar).Value = jList.state_name;
+                cmd.Parameters.Add("@c", SqlDbType.NVarChar).Value = jList.qualification_name;
+
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();

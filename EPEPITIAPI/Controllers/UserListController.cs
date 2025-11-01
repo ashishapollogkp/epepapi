@@ -209,5 +209,36 @@ namespace EPEPITIAPI.Controllers
             }
 
         }
+
+
+
+        [HttpGet("Get-GetUserDetail_Trainer")]
+        public IActionResult GetUserDetail_Trainer()
+        {
+            try
+            {
+                List<UserList> uLists = new List<UserList>();
+                uLists = _oUserListDAL.GetUserDetail_Trainer();
+                var sList = uLists.Select(a => new
+                {
+                    a.id,
+                    a.userName,
+                    a.genderName,
+                    a.sectorName,
+                    a.jobProfile,
+                    a.userRole,
+                    a.firmName,
+                    a.userMobile,
+                    a.userEmail,
+                    a.address,
+                    a.status
+                });
+                return Ok(sList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Error");
+            }
+        }
     }
 }

@@ -3,32 +3,92 @@
   "WorkspaceRootPath": "D:\\skylabs_projects\\epepapi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\binddropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\binddropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\dbhelper\\candidatelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\candidatelistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\userlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\userlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\dbhelper\\userlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\userlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\candidatelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\candidatelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\uprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\uprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\candidatelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\candidatelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\candidatelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\candidatelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\trainingcenterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\trainingcenterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\trainingcenterlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\trainingcenterlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\dbhelper\\trainingcenterlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\dbhelper\\trainingcenterlistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\batchsection\\addbatchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\batchsection\\addbatchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\interfaces\\ishared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\interfaces\\ishared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\batchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\batchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\services\\sharedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\services\\sharedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\data\\tmbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\data\\tmbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\data\\tmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\data\\tmuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\data\\tmtrainingcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\data\\tmtrainingcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\batchsection\\batchapproverejectreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\batchsection\\batchapproverejectreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\trainingsection\\approverejectreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\trainingsection\\approverejectreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\epepdbcontext\\epepitidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\epepdbcontext\\epepitidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\controllers\\batchlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\controllers\\batchlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\data\\tmbatchschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\data\\tmbatchschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\models\\userinfosection\\trainerinforeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\models\\userinfosection\\trainerinforeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|d:\\skylabs_projects\\epepapi\\epepitiapi\\data\\master_trainer_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD1CDB9-7003-43B2-97C8-C6C25E585143}|EPEPITIAPI\\EPEPITIAPI.csproj|solutionrelative:epepitiapi\\data\\master_trainer_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,94 +110,287 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BindDropDownController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BindDropDownController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\BindDropDownController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BindDropDownController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\BindDropDownController.cs",
+              "ViewState": "AgIAAE0BAAAAAAAAAADwv2QBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:59:36.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Program.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Program.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Program.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "UserListController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\UserListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\UserListController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\UserListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\UserListController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAA/wNYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:03:08.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IShared.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Interfaces\\IShared.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Interfaces\\IShared.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Interfaces\\IShared.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Interfaces\\IShared.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:54:09.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SharedService.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Services\\SharedService.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Services\\SharedService.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Services\\SharedService.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Services\\SharedService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:29:00.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SharedController.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\SharedController.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\SharedController.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\SharedController.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Controllers\\SharedController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAUwDoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:27:34.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "APIResponse.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\APIResponse.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\APIResponse.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\APIResponse.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Models\\APIResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:17:08.032Z",
+              "WhenOpened": "2025-11-01T10:25:19.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TMTrainingCenter.cs",
-              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMTrainingCenter.cs",
-              "RelativeDocumentMoniker": "EPEPITIAPI\\Data\\TMTrainingCenter.cs",
-              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMTrainingCenter.cs",
-              "RelativeToolTip": "EPEPITIAPI\\Data\\TMTrainingCenter.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAywBcAAAAWAAAAAAAAAA==",
+              "Title": "CandidateListDTO.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\CandidateListDTO.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\CandidateListDTO.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\CandidateListDTO.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\CandidateListDTO.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T13:20:07.322Z",
+              "WhenOpened": "2025-11-01T09:44:49.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "CandidateListDAL.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\CandidateListDAL.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwEcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T07:47:51.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CandidateListController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\CandidateListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\CandidateListController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\CandidateListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\CandidateListController.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAowNQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T07:47:24.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainingCenterList.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\TrainingCenterList.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\TrainingCenterList.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\TrainingCenterList.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\TrainingCenterList.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA4wCYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T07:18:20.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TrainingCenterListDAL.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\TrainingCenterListDAL.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAADwv5YBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T05:56:34.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UProfileController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\UProfileController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\UProfileController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\UProfileController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\UProfileController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwC0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:31:56.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CandidateList.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\CandidateList.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\CandidateList.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\CandidateList.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\CandidateList.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T10:00:16.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserListDAL.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\UserListDAL.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\DBHelper\\UserListDAL.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\DBHelper\\UserListDAL.cs",
+              "RelativeToolTip": "EPEPITIAPI\\DBHelper\\UserListDAL.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvzkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T10:25:13.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "TrainingCenterListController.cs",
               "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
               "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
               "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
               "RelativeToolTip": "EPEPITIAPI\\Controllers\\TrainingCenterListController.cs",
-              "ViewState": "AgIAAEIBAAAAAAAAAAAowE0BAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAkwKkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T11:12:27.567Z",
+              "WhenOpened": "2025-11-01T05:56:34.96Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BatchApproveRejectReq.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\BatchSection\\BatchApproveRejectReq.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\BatchSection\\BatchApproveRejectReq.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\BatchSection\\BatchApproveRejectReq.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\BatchSection\\BatchApproveRejectReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T07:03:32.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApproveRejectReq.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\TrainingSection\\ApproveRejectReq.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\TrainingSection\\ApproveRejectReq.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\TrainingSection\\ApproveRejectReq.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\TrainingSection\\ApproveRejectReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T07:00:35.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BatchController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BatchController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\BatchController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BatchController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\BatchController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAcwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T04:48:33.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddBatchRequest.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\BatchSection\\AddBatchRequest.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\BatchSection\\AddBatchRequest.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\BatchSection\\AddBatchRequest.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\BatchSection\\AddBatchRequest.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwDQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T04:46:39.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TMBatchSchedule.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMBatchSchedule.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Data\\TMBatchSchedule.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMBatchSchedule.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Data\\TMBatchSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T04:45:08.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BatchListController.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Controllers\\BatchListController.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAwwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:42:51.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TMBatch.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMBatch.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Data\\TMBatch.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMBatch.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Data\\TMBatch.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:36:55.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TMUser.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMUser.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Data\\TMUser.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\TMUser.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Data\\TMUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:45:52.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EPEPITIDbContext.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPDbContext\\EPEPITIDbContext.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\EPEPDbContext\\EPEPITIDbContext.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\EPEPDbContext\\EPEPITIDbContext.cs",
+              "RelativeToolTip": "EPEPITIAPI\\EPEPDbContext\\EPEPITIDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:34:38.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TrainerInfoReq.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\userInfoSection\\TrainerInfoReq.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Models\\userInfoSection\\TrainerInfoReq.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Models\\userInfoSection\\TrainerInfoReq.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Models\\userInfoSection\\TrainerInfoReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:16:34.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "master_trainer_info.cs",
+              "DocumentMoniker": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\master_trainer_info.cs",
+              "RelativeDocumentMoniker": "EPEPITIAPI\\Data\\master_trainer_info.cs",
+              "ToolTip": "D:\\skylabs_projects\\epepapi\\EPEPITIAPI\\Data\\master_trainer_info.cs",
+              "RelativeToolTip": "EPEPITIAPI\\Data\\master_trainer_info.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:15:15.827Z"
             }
           ]
         }

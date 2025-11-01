@@ -9,5 +9,11 @@ namespace EPEPITIAPI.EPEPDbContext
 
         public DbSet<request_master> request_master { get; set; }
         public DbSet<TMTrainingCenter> TMTrainingCenter { get; set; }
+        public DbSet<master_trainer_info> master_trainer_info { get; set; }
+        public DbSet<TMUser> TMUser { get; set; }
+        public DbSet<TMBatchSchedule> TMBatchSchedule { get; set; }
+        public DbSet<TMBatch> TMBatch { get; set; }
+
+
     }
 }
