@@ -112,6 +112,135 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchController",
+    "Method": "AddBatch",
+    "RelativePath": "api/Batch/AddBatch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "EPEPITIAPI.Models.BatchSection.AddBatchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchController",
+    "Method": "GetBatchById",
+    "RelativePath": "api/Batch/GetBatchById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchController",
+    "Method": "GetBatchList",
+    "RelativePath": "api/Batch/GetBatchList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchController",
+    "Method": "UpdateBatch",
+    "RelativePath": "api/Batch/UpdateBatch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "EPEPITIAPI.Models.BatchSection.AddBatchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.BatchController",
+    "Method": "UpdateBatchStatus",
+    "RelativePath": "api/Batch/UpdateBatchStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "EPEPITIAPI.Models.BatchSection.BatchApproveRejectReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "EPEPITIAPI.Controllers.BatchListController",
     "Method": "InsertBatchDetail",
     "RelativePath": "api/BatchList/Add-InsertBatchDetail",
@@ -1400,6 +1529,58 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UProfileController",
+    "Method": "GetTProfile",
+    "RelativePath": "api/UProfile/GetTProfile/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EPEPITIAPI.Controllers.UProfileController",
+    "Method": "UpdateTProfile",
+    "RelativePath": "api/UProfile/UpdateTProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "EPEPITIAPI.Models.userInfoSection.TrainerInfoReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EPEPITIAPI.Models.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EPEPITIAPI.Controllers.UserListController",

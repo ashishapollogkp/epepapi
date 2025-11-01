@@ -48,6 +48,40 @@ namespace EPEPITIAPI.DBHelper
             return lstSectorList;
         }
 
+
+
+        public List<UserList> GetUserDetail_Trainer()
+        {
+            List<UserList> lstSectorList = new List<UserList>();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("SP_GetUserDetail_Trainer", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                using (SqlDataReader dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        UserList lst = new UserList();
+                        lst.id = Convert.ToInt32(dr["id"]);
+                        lst.userName = dr["userName"].ToString();
+                        lst.genderName = dr["gender"].ToString();
+                        lst.sectorName = dr["sectorName"].ToString();
+                        lst.jobProfile = dr["jobProfile"].ToString();
+                        lst.userRole = dr["userRole"].ToString();
+                        lst.firmName = dr["firmName"].ToString();
+                        lst.userMobile = dr["userMobile"].ToString();
+                        lst.userEmail = dr["userEmail"].ToString();
+                        lst.status = Convert.ToInt32(dr["status"]);
+                        lstSectorList.Add(lst);
+                    }
+
+                }
+                conn.Close();
+            }
+            return lstSectorList;
+        }
+
         public UserList GetUserDetailToViewByID(int id)
         {
             UserList uList = null;

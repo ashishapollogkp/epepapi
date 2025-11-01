@@ -74,6 +74,14 @@
 
         public int createdBy { get; set; }
 
+
+
+        public string? religion_name { get; set; }
+        public string? category_name { get; set; }
+        public string? gender_name { get; set; }
+        public string? state_name { get; set; }
+        public string? qualification_name { get; set; }
+
     }
 }
 
